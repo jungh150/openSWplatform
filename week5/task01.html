@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>구구단</h1>
+    <p id="text">아래 버튼을 클릭하여 원하는 단을 입력하세요</p>
+    <button onclick="myFunction()">Click</button>
+    <script>
+      function myFunction() {
+        var inputNum = prompt("구구단 몇단을 출력하겠습니까?");
+        if (inputNum < 2 || inputNum > 9) {
+          alert("2-9 사이의 단을 입력하세요!");
+        }
+        else {
+          var str = "";
+          for (var i=1; i<10; i++) {
+            str = str + inputNum + "X" + i + "=" + inputNum*i + '<br>';
+          }
+          document.getElementById("text").innerHTML = str;
+        }
+      }
+    </script>
+  </body>
+</html>

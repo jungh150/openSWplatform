@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Gallery</h2>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gallery1.jpg">
+      <img src="gallery1.jpg" alt="gallery 1" width="600" height="400">
+    </a>
+    <div class="desc">Jul 5, 2023. Hoi An, Vietnam</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gallery2.jpg">
+      <img src="gallery2.jpg" alt="gallery 2" width="600" height="400">
+    </a>
+    <div class="desc">May 31, 2023. Hangang River, Korea</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gallery3.jpg">
+      <img src="gallery3.jpg" alt="gallery 3" width="600" height="400">
+    </a>
+    <div class="desc">Feb 24, 2023. Yeosu, Korea</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gallery5.jpg">
+      <img src="gallery5.jpg" alt="gallery 5" width="600" height="400">
+    </a>
+    <div class="desc">Feb 2, 2023. Universal Studios Japan</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gallery4.jpg">
+      <img src="gallery4.jpg" alt="gallery 4" width="600" height="400">
+    </a>
+    <div class="desc">Feb 1, 2023. Kiyomizu-dera, Japan</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gallery6.jpg">
+      <img src="gallery6.jpg" alt="gallery 6" width="600" height="400">
+    </a>
+    <div class="desc">Nov 5, 2022. Everland, Korea</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="gallery7.jpg">
+      <img src="gallery7.jpg" alt="gallery 7" width="600" height="400">
+    </a>
+    <div class="desc">Aug 27, 2022. Wolmido, Korea</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>Photo by Junghwa.</p>
+</div>
+
+</body>
+</html>
