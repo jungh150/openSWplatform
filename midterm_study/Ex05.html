@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Window 객체의 alert() 메소드</h1>
+    <button onclick="alertDialogBox()">alert 대화 상자</button><br>
+    <script>
+      function alertDialogBox() {
+        alert("확인을 누를 때까지 다른 작업을 할 수 없어요!");
+      }
+    </script>
+
+    <h1>HTML DOM 요소를 이용한 innerHTML 프로퍼티</h1>
+    <p id="text">바꾸기 전 문장</p>
+    <script>
+      var str = document.getElementById("text");
+      str.innerHTML = "바꾸고 난 후 문장";
+    </script>
+
+    <p id="text2">이 문장도 바꿔봅시다</p>
+    <button type="button" onclick='document.getElementById("text2").innerHTML = "이 문장도 바뀌었습니다!"'>
+    Click Me!</button>
+
+    <h1>Document 객체의 write() 메소드</h1>
+    <button onclick="document.write(4*5)">4*5=?</button>
+  </body>
+</html>
