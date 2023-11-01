@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+  </style>
+  <body>
+    <h1 style="background-color:powderblue; text-align:center;">My First Heading</h1>
+    <h6>My Second Heading</h6>
+    <p style="color:blue;">My <b>first</b> paragraph<br>with line break</p>
+    <a href="http://www.ewha.ac.kr/ewha/index.do" target="_blank">Visit Ewha</a>
+    <button onclick="document.location='http://www.ewha.ac.kr/ewha/index.do'">EWHA</button><br><br>
+    <table style="width:100%;">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table><br>
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br>
+      <input type="submit" value="Submit">
+    </form><br>
+    <form>
+      <input type="password" name="password" size="10" maxlength="20"><br>
+      <input type="search" name="search" size="10" maxlength="20"><br>
+      <input type="url" name="address" size="30" maxlength="100" placeholder="jungh150@naver.com"><br>
+      <input type="number" min="0" max="10" value="1"><br>
+      <input type="data"><br>
+      <input type="tel" required><br>
+      <input type="text" value="입력 불가" readonly><br>
+    </form><br>
+    <iframe src="http://www.ewha.ac.kr/ewha/index.do" title="Ewha" height="400" width="600"></iframem>
+  </body>
+</html>
