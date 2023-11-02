@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" id="htmlll">
+  <head id="headd">
+    <meta charset="UTF-8">
+    <title>JavaScript Node Access</title>
+  </head>
+  <body id="bodyy">
+    <h1>nodeName 프로퍼티</h1>
+    <p id="document"></p>
+    <p id="html"></p>
+    <p id="text"></p>
+    <script>
+      document.getElementById("document").innerHTML = document.childNodes[1].nodeName;
+      // HTML 문서의 모든 자식 노드 중에서 두 번째 노드의 이름을 선택함. -> HTML
+      document.getElementById("html").innerHTML = document.childNodes[1].childNodes[0].nodeName;
+      // html 노드의 모든 자식 노드 중에서 첫 번째 노드의 이름을 선택함. -> HEAD
+
+      var list = document.getElementById("bodyy").childNodes;
+      document.getElementById("text").innerHTML = "body의 자식 노드의 개수: " + list.length;
+      for (var i=0; i<list.length; i++) {
+        document.write(list[i].nodeName + "<br>");
+      }
+    </script>
+  </body>
+</html>

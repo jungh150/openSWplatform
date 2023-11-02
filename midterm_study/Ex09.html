@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>insertData() 메소드</h1>
+    <p id="text">나는 멋쟁이 토마토</p>
+    <button onclick="appendText()">텍스트 추가!</button>
+    <script>
+      var text = document.getElementById("text").firstChild;
+      // 아이디가 "text"인 요소의 텍스트 노드를 선택함.
+      function appendText() {
+        text.replaceData(3, 3, " 짱 ");
+        // 텍스트 노드의 6번째 문자부터 " 나른한 "이란 텍스트를 추가함.
+      }
+    </script>
+  </body> 
+</html>
